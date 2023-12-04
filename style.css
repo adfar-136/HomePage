@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* General styles for larger screens (laptop) */
+.home {
+    margin-top: -250px;
+    width: 100%;
+    height: 985px;
+    background-image: url("./img/Group1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    z-index: 10;
+    gap: 30px;
+    position: relative;
+}
+
+.home .home-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .home-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home-right .edu-pi-logo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 80px;
+    margin-left: 110px;
+}
+
+.home-left .p {
+    color: white;
+    font-size: 16px;
+    width: 500px;
+    height: auto;
+    margin-right: 100px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.home-left .text-wrapper-2 {
+    color: #fefefe;
+    font-size: 45px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: bold;
+    margin-left: 100px;
+    height: auto;
+    width: 600px;
+    font-style: normal;
+    margin-right: 100px;
+}
+
+.home-left .text-wrapper {
+    background-color: rgba(223, 253, 225, 1);
+    width: 223px;
+    height: 20px;
+    font: bold;
+    font-family: "Poppins-Bold", Helvetica;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 330px;
+    font-style: 32px;
+    padding: 18px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+@media screen and (max-width: 480px) {
+    .home {
+        width: 100%; /* Ensure full width */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .home-right .edu-pi-logo {
+        display: none; /* Hide the logo on smaller screens */
+    }
+    .home-left .p{
+        width: 300px;
+        margin: 0;
+        margin-bottom: 60px;
+        font: 15px;
+        margin-left: 30px;
+    }
+    .home-left .text-wrapper-2 {
+        font-size: 24px; 
+        width: 100%;
+        margin: 0;
+        margin-left: 30px;
+        margin-bottom: 40px;
+
+    }
+
+    .home-left .text-wrapper {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 10px;
+        margin: 0; /* Adjust padding for smaller screens */
+    }
+}
+/* Media query for smaller screens (mobile) */
+@media screen  and (min-width: 480px) and (max-width: 767px){
+    .home {
+        height: 500px;
+        margin:0; 
+        background-size: 100% 80% ;
+        text-align: center;
+        
+    /* Adjust as needed for mobile layout */
+    }
+    .home-left .p {
+        color: white;
+        font-size: 16px;
+        height: auto;
+        width: 90%;
+        margin-top:-120px;
+        margin-left: 90px;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .home .home-right .edu-pi-logo {
+        display: none; 
+    }
+
+    .home-left .text-wrapper-2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        margin: 0;
+        width: 90%;
+        margin-left: 70px;
+  margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .home-left .text-wrapper {
+        margin-right: 20px;
+        background-color: rgba(223, 253, 225, 1);
+        width:260px;
+        height: 20px;
+        font: bold;
+        font-family: "Poppins-Bold", Helvetica;
+        color: black;
+        font-size: 22px;
+        text-align: center;
+        margin-left: 100px;
+        font-style: 32px;
+        padding: 18px;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+}
+/* Media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .home {
+        width: 100%; /* Ensure full width */
+        overflow-x: hidden;
+        
+         /* Hide horizontal scrollbar */
+    }
+
+    .home-right {
+        position: relative;
+        width: 100%; /* Ensure full width */
+    }
+
+    .home-right .edu-pi-logo {
+        display: block;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        right: 400px;
+        bottom: 100px;
+    }
+
+    .home-left .text-wrapper-2 {
+        font-size: 36px;
+    }
+
+    .home-left .text-wrapper {
+        font-size: 24px;
+        padding: 12px;
+    }
+}
+
+.home-info {
+    text-align: center;
+    height: 985px;
+    padding: 50px; 
+    background-image: url("./img/Rectangle\ 10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -300px;
+    z-index: -10;
+
+}
+
+.text-wrapper {
+    margin-top: 200px;
+    font-size: 32px;
+  font: bold;
+  font-family: "Poppins-Bold", Helvetica;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 65px;
+  font-style: 32px;
+  font-weight: bold;
+  padding: 18px;
+  border-radius: 20px; /* Adjust the font size as needed */
+}
+
+.info-card {
+    background-color: rgba(166, 207, 213, 1); /* Greenish background color */
+    color: #fff; /* Text color */
+    width: 80%;
+    padding: 20px; /* Adjust the padding as needed */
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.info-card p{
+    text-align: justify;
+    color: #000;
+    font-size:20px ;
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-wrapper {
+        margin-top: 100px;
+        font-size: 28px;
+        margin-bottom: 45px;
+    }
+
+    .info-card {
+        width: 90%;
+        padding: 15px;
+        border-radius: 30px;
+    }
+
+    .info-card p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .home-info {
+        height: auto;
+        margin-top: 0;
+        background-size: cover;
+        margin-top: -200px;
+    }
+
+    .text-wrapper {
+        margin-top: 50px;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .info-card {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 90px;
+    }
+
+    .info-card p {
+        font-size: 16px;
+    }
+
+    .info-card p:nth-child(n+4) {
+        display: none; /* Hide paragraphs starting from the 4th paragraph */
+    }
+}
