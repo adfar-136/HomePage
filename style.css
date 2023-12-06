@@ -706,7 +706,6 @@ position: relative;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: -60px;
-    position: relative;
     height: 650px;
   }
   
@@ -715,7 +714,7 @@ position: relative;
     font-size: 36px;
     font-weight: bold;
     position: relative;
-    top: 50px;  
+    top: 51px;  
   }
   
   /* Program row styling with Grid layout */
