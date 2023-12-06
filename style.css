@@ -401,7 +401,7 @@
   line-height: 1.5;
   flex: 1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .edu-way {
     height: 100vh;
     background-size: cover;
@@ -694,7 +694,7 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px){
   body {
     overflow-x: hidden; /* Add this line to hide horizontal scrollbar on the body */
   }
